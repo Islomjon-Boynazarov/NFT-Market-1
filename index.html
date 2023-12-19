@@ -1,32 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 
 <body>
-<div class="main">
-    <div class="navbar">
-        <div class="nav">
-            <img class="navbar-icon" src="assets/icons/image.jpg" alt="">
-            <div class="top-header">
-                <ul class="wrapper">
-                    <li>Explore</li>
-                    <li>Creators</li>
-                    <li>Community</li>
-                    <button class="btn-1"><p>Connect Wallet</p></button>
-                </ul>
-            </div>
-        </div>
-       </div>
-</div>
+  <!-- navbar start -->
+  <nav class="container navbar py-10">
+   <ul class="flex justify-between items-center">
+    <li class="logo">
+        <a href="">
+        <img src="assets/images/logo.jpg" alt="">
+     </a>
+   </li>
+     <li class="links">
+        <ul class="flex gap-10 items-center">
+            <li><a href="">Explore</a></li>
+            <li ><a href="">Creators</a></li>
+            <li><a href="">Community</a></li>
+        </ul>
+     </li>
+     
+    <li class=""><a href="">Content Wallet</a></li>
+   </ul>
+  </nav>
 </body>
 
 </html>
