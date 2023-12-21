@@ -1,0 +1,56 @@
+.navbar
+    height: 15vh
+    padding: 3vh min(1vh ,3vmin,15px)
+    background: inherit 
+    position: fixed
+    width: 100%
+    top: 0
+    left: 0  
+    z-index: 11
+.navbar > ul
+
+    li.links
+        >ul li
+            color: inherit
+            position: relative
+            font-size: 18px
+            font-weight: 500
+            line-height: 21px
+            letter-spacing: 0.02em
+            &:hover
+                color: var(--primary)
+            &:hover::before
+                content: ""
+                position: absolute
+                width: 100%
+                height: 3px
+                bottom: -10px
+                background: var(--primary)
+
+.mobile-navbar
+    position: fixed
+    top: -100%
+    height: 79vh
+    background: var(--primary2)
+    width: 100%
+    left:0
+    transition: all .2s
+    z-index: 10
+    &.active
+        top: 21vh
+
+#menu-btn
+    display: none
+    cursor: pointer
+
+@media screen and (width <= 768px)
+    #menu-btn
+        display: block 
+    .navbar
+        height: 50px
+        >ul
+            li.links, .btn
+                display: none
+            li.logo img
+                width: 48px
+                height: 48px

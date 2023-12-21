@@ -20,4 +20,95 @@
 body {
   background: var(--primary2);
   color: var(--light);
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  max-width: 1367px;
+  margin: 0 auto;
+}
+
+.btn {
+  height: 64px;
+  padding: 0 2rem;
+  cursor: pointer;
+}
+
+.btn-primary-outline {
+  border: 1px solid var(--primary);
+  background: #e9dd7a71a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in;
+}
+.btn-primary-outline:hover {
+  background: rgba(233, 215, 167, 0.1019607843);
+}
+
+.navbar {
+  height: 15vh;
+  padding: 3vh min(1vh, 3vmin, 15px);
+  background: inherit;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+
+.navbar > ul li.links > ul li {
+  color: inherit;
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+}
+.navbar > ul li.links > ul li:hover {
+  color: var(--primary);
+}
+.navbar > ul li.links > ul li:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  background: var(--primary);
+}
+
+.mobile-navbar {
+  position: fixed;
+  top: -100%;
+  height: 79vh;
+  background: var(--primary2);
+  width: 100%;
+  left: 0;
+  transition: all 0.2s;
+  z-index: 10;
+}
+.mobile-navbar.active {
+  top: 21vh;
+}
+
+#menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (width <= 768px) {
+  #menu-btn {
+    display: block;
+  }
+  .navbar {
+    height: 50px;
+  }
+  .navbar > ul li.links, .navbar > ul .btn {
+    display: none;
+  }
+  .navbar > ul li.logo img {
+    width: 48px;
+    height: 48px;
+  }
 }/*# sourceMappingURL=main.css.map */
