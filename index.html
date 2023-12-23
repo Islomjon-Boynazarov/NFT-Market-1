@@ -1,54 +1,94 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 
 <body>
   <!-- navbar start -->
 
-  <nav class=" navbar  fixed left-0 top-0 bg-inherit">
-   <ul class="flex container justify-between items-center">
-    <li class="logo"> 
+  <nav class="navbar fixed left-0 top-0 bg-inherit">
+    <ul class="flex container justify-between items-center">
+      <li class="logo">
         <a href="">
-        <img src="assets/images/logo.png" alt="">
-     </a>
-   </li>
-     <li class="links">
+          <img src="assets/images/logo.png" alt="" />
+        </a>
+      </li>
+      <li class="links">
         <ul class="flex gap-10 items-center">
-            <li><a href="">Explore</a></li>
-            <li ><a href="">Creators</a></li>
-            <li><a href="">Community</a></li>
+          <li><a href="">Explore</a></li>
+          <li><a href="">Creators</a></li>
+          <li><a href="">Community</a></li>
         </ul>
-     </li>
-     
-    <li class="btn btn-primary-outline"> <a href="">Content Wallet</a></li>
-    <li id="menu-btn">
-      <img src="assets/images/menu.png" alt="">
-    </li>
+      </li>
 
-   </ul>
+      <li class="btn btn-primary-outline"><a href="">Content Wallet</a></li>
+      <li id="menu-btn">
+        <img src="assets/images/menu.png" alt="" />
+      </li>
+    </ul>
   </nav>
 
   <nav class="mobile-navbar">
     <ul class="flex flex-col gap-10 items-center">
       <li><a href="">Explore</a></li>
-      <li ><a href="">Creators</a></li>
+      <li><a href="">Creators</a></li>
       <li><a href="">Community</a></li>
-      <li class="btn btn-primary-outline"> <a href="">Content Wallet</a></li>
-  </ul>
+      <li class="btn btn-primary-outline"><a href="">Content Wallet</a></li>
+    </ul>
   </nav>
 
-    <!-- Navbar ends -->
+  <!-- Navbar ends -->
 
-    <script src="./script.js"></script>
+  <div class="container">
+    <!-- Hero section starts -->
 
+    <section class="section hero">
+
+      <div class="hero__top">
+
+        <div>
+          <!-- left -->
+          <h1> Explore, Buy and Sell the <span> Best NFTs! </span> </h1>
+
+          <div class="flex items-center justify-self-start gap-10">
+            <button class="btn btn-primary-outline ">Explore</button>
+
+            <button class="btn btn-primary">Create</button>
+
+
+          </div>
+
+          <div class="flex items-center justify-between gap-10">
+            <div class="hero-stat-card flex flex-col gap-3">
+              <h2 class="text-center">32k+</h2>
+              <p class="text-center">Artworks</p>
+
+              <h2 class="text-center">32k+</h2>
+              <p class="text-center">Artworks</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div>
+          <!-- Right -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Hero section ends -->
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
